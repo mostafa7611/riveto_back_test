@@ -1,8 +1,9 @@
 import { Injectable } from '@nestjs/common';
+import { user } from '~/configs/user';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
+  functionTest(): object {
+    return user;
   }
 }

@@ -16,6 +16,10 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
-  }
+    "noFallthroughCasesInSwitch": false,
+    "paths":{
+      "@/*": ["./src/*"],  //we defined that this particular path that tsconfig.json is will be translated to @/ as used in app.service.ts
+      "~/*": ["./*"]
+    }
+  },
 }
